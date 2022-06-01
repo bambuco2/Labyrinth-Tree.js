@@ -1,0 +1,115 @@
+#info {
+	position: absolute;
+	top: 10px;
+	width: 80%;
+	text-align: right;
+	z-index: 100;
+	display:block;
+	color:yellow;
+}
+
+#points {
+	position: absolute;
+	top: 10px;
+	width: 80%;
+	text-align: center;
+	z-index: 100;
+	display:block;
+	color:yellow;
+}
+
+#time {
+	position: absolute;
+	top: 10px;
+	width: 80%;
+	text-align: left;
+	z-index: 100;
+	display:block;
+	color:yellow;
+}
+#song{
+	position: absolute;
+	top: 22px;
+	width: 80%;
+	text-align: left;
+	z-index: 100;
+	display:block;
+	color:yellow;
+}
+
+#glasba{
+	position: absolute;
+	top: 40px;
+	width: 80%;
+	text-align: left;
+	z-index: 100;
+	display:block;
+	color:yellow;
+}
+
+#space {
+	height:40%;
+}
+#meni{
+	text-align:center;
+	border-style:solid;
+	color:#6600cc;
+	width:40%;
+	margin:0 auto;
+}
+
+#highscore{
+	border-style:solid;
+	color:#6600cc;
+	width:40%;
+	margin:0 auto;
+}
+#player{
+	float:left;
+}
+#tocke{
+	margin-left:15%;
+}
+#space2 {
+	height:10%;
+}
+
+#start:hover{
+	color:white;
+}
+
+#options:hover{
+	color:white;
+}
+#score:hover{
+	color:white;
+}
+
+#bla{
+	border-style:solid;
+	position: absolute;
+	z-index: 100;
+	top: 40%;
+	width: 98%;
+	color:#6600cc;
+	text-align: center;
+}
+
+
+#resume:hover{
+	color:white;
+}
+
+#option:hover{
+	color:white;
+}
+a{
+	text-decoration: none;
+	color:#6600cc;
+}
+a:hover{
+	color:white;
+}
+#exit:hover{
+	color:white;
+}

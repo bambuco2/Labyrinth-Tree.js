@@ -1,0 +1,78 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="oblika.css">
+</head>
+
+<script>
+var glasba = true;
+var text="on";
+var myMusic = new Audio('sounds/meni.mp3');
+if (localStorage.getItem("text") === null) {
+	localStorage.setItem('text', 'on')
+	myMusic.play();
+}
+else if(localStorage.getItem("text") == "on"){
+	myMusic.play();
+}
+</script>
+
+<body background="slike/meni.jpg">
+<div id="info">Description</div>
+<div id="points"></div>
+<div id="time">Time</div>
+<div id="song">Song by Journey Into Sleep by Martijn de Boer (NiGiD) </div>
+<div id="glasba"><button id="asdf">Glasba</button> </div>
+<div id = "space"></div>
+<div id = "meni"><h1><div id="start">MUSIC ON</div><br>
+					<div id="usr">USERNAME:<input id="name" value="unknown" type="text"><button id="save">SHRANI</button> </div><br>
+					<script>
+						var bla = document.getElementById("name");
+						if(localStorage.getItem('name') != null){
+							bla.value=localStorage.getItem('name');
+						}
+					</script>
+				<div id="options"><a href="igrca.html">BACK</a></div><br>
+</div>
+
+
+
+<script>
+var myNode= document.getElementById("start");
+
+if(localStorage.getItem("text") == "off"){
+	myNode.innerHTML="MUSIC OFF";
+	glasba=false;
+}
+
+	myNode.addEventListener("click",function(e){
+		if(glasba){
+			myNode.innerHTML="MUSIC OFF";
+			myMusic.pause();
+			glasba=false;
+			text="off";
+			localStorage.setItem('text', 'off')
+		}
+		else{
+			myNode.innerHTML="MUSIC ON";
+			myMusic.play();
+			glasba=true;
+			text="on";
+			localStorage.setItem('text', 'on')
+		}
+	});
+	
+	document.getElementById('save').onclick = function() {
+		var ime = document.getElementById("name");
+		localStorage.setItem('name', ime.value);
+	};
+	
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
